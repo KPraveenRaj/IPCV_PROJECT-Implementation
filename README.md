@@ -1,5 +1,5 @@
 # PFT-SR: Google Colab Implementation
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/YOUR_COLAB_URL_HERE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/YOUR_COLAB_URL_HERE](https://drive.google.com/file/d/1zWMy3ysSe_F2hPv80U2XQS9ic3cjcF2T/view?usp=drive_link))
 
 This repository contains a Google Colab notebook for the paper: **Progressive Focused Transformer for Single Image Super-Resolution (PFT-SR)**. This implementation was created as part of an MTech (IPCV) course project.
 
