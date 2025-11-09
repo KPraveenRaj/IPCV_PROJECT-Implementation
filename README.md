@@ -6,7 +6,7 @@ This repository contains a Google Colab notebook to implement: **Progressive Foc
 The primary goal of this repository is to provide a convenient, ready-to-run Google Colab environment that handles the specific dependencies (CUDA 12.1, PyTorch 2.5.0, custom CUDA ops) required by the original project.
 
 ### 📄 Original Project
-* **Paper:** Progressive Focused Transformer for Single Image Super-Resolution
+* **Paper:** [Progressive Focused Transformer for Single Image Super-Resolution](https://arxiv.org/pdf/2503.20337)
 * **Original Repo:** [https://github.com/LabShuHangGU/PFT-SR](https://github.com/LabShuHangGU/PFT-SR)
 
 All credit for the model architecture and original source code goes to the original authors.
