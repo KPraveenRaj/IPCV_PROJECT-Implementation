@@ -77,16 +77,13 @@ Now you're ready to test!
 ---
 
 ## 🖼️ Example Result
-Here is an example using the `sign.jpg` image (from the notebook) with the `lightweight` model at 4x scale.
-
-**(To add your images, take screenshots of your input/output and upload them to your GitHub repo. Then, replace the file paths below.)**
+Here is an example using the `lenna.png` image (from the notebook) with the `lightweight` model at 4x scale.
 
 ### Input (sign.jpg)
-*(You should place your input image here)*
 
-![Input Image](path/to/your/input_image.jpg)
+![Input Image](test/lenna.png)
 
 ### Output (sign_PFT_lightweight_SRx4.jpg)
 *(You should place the resulting output image here)*
 
-![Output Image](path/to/your/output_image.jpg)
+![Output Image](test/results/lenna_PFT_lightweight_SRx4.png)
