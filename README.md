@@ -56,20 +56,23 @@ Run these cells in order. They will:
 2.  Install the matching **PyTorch version (`2.5.0+cu121`)**.
 3.  Install all other Python dependencies (like `opencv`, `lmdb`, etc.).
 
-#### Step 6: Compile Custom CUDA Ops (Cell 9)
+#### Step 5: Compile Custom CUDA Ops (Restart the runtime if not yet at this point)
 This cell compiles the custom `ops_smm` operator required by PFT-SR. This step may take several minutes.
 
 On its first run, it will compile the code and then **save the compiled files to your Drive cache**. On all future runs, this cell should load the cached version (this logic is in the notebook).
 
-#### Step 7: Run Inference (Cells 10-11)
+#### Step 6: Run Inference (experiment)
 Now you're ready to test!
-1.  **Cell 10:** Run this cell to open an "Upload" widget. Upload any low-resolution (LR) test image from your computer.
-2.  **Cell 11:** This cell runs the main `inference.py` script on the image you just uploaded. You can modify the arguments:
+1.  Run this cell to open an "Upload" widget. Upload any low-resolution (LR) test image from your computer.
+2.  This cell runs the main `inference.py` script on the image you just uploaded. You can modify the arguments:
     * `--scale 4`: Sets the upscaling factor (e.g., 4x).
     * `--task lightweight`: Selects the model to use.
+3. This will automatically find the super-resolved (SR) image in the `results/colab_output/` folder and download it to your computer.
 
-#### Step 8: Download Result (Cell 12)
-Run the final cell. This will automatically find the super-resolved (SR) image in the `results/colab_output/` folder and download it to your computer.
+#### Step 8: Batch processing (optional)
+ This step runs the main `inference.py` script on the image you just uploaded. You can modify the arguments:
+    * `-i inference_images/`: Sets the input batch set path.
+    * `-o results/test/`: Sets the output path.
 
 ---
 
