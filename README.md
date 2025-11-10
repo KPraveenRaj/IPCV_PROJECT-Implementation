@@ -29,31 +29,28 @@ This guide will walk you through running the `IPCV_Project_PFT_SR_Implementation
 
 Follow these steps by running the cells in the notebook in order.
 
-#### Step 1: Mount Drive & Create Cache (Cell 1)
-Run the first code cell to mount your Google Drive. This will create a cache folder in your Drive at `/MyDrive/Colab_Notebooks/MTech_IPCV/IPCV_Project/PFT_SR_CACHE`.
+#### Step 1: Mount Drive & Create Cache
+Run the first code cell to mount your Google Drive. This will create a cache folder in your Drive at `/MyDrive/Colab_Notebooks/MTech_IPCV/IPCV_Project/PFT_SR_CACHE` by default or change it to your prefered location in drive.
 
 > **Why?** This cache is used to store the downloaded repository and, more importantly, the compiled CUDA extensions. This means you only have to compile the custom code **once**. On future runs, it will load from your Drive, saving you ~10-15 minutes of setup time.
 
-#### Step 2: Check GPU (Cell 2)
-Run this cell (`!nvidia-smi`) to confirm that Colab has assigned you a GPU. You should see an output table showing a GPU like a Tesla T4 and a CUDA Version (e.g., 12.4).
-
-#### Step 3: Clone Repository (Cell 3)
+#### Step 2: Clone Repository (Download original work with git)
 This cell clones the PFT-SR repository.
 * **First Run:** It clones from GitHub and saves a copy to your Drive cache.
 * **Future Runs:** It loads the repo directly *from* your cache, which is much faster.
 
-#### Step 4: ‼️ IMPORTANT: Load Pretrained Models (Manual Step)
-This is the most important **manual step**. The notebook (Cell 4) will link you to a Google Drive folder.
+#### Step 3: ‼️ IMPORTANT: Load Pretrained Models (Manual Step)
+This is the most important **manual step**. The notebook will link you to a Google Drive folder.
 1.  **[Click this link to download the models](https://drive.google.com/drive/folders/1ChkxVDghFWUtJydJKLp5yssrUfm0VWfg)**.
 2.  In your Google Colab file explorer (left-hand sidebar), navigate to `/content/PFT-SR/`.
-3.  Create a new folder named `experiments`.
-4.  Inside `experiments`, create another folder named `pretrained_models`.
+3.  go into the folder named `experiments`.
+4.  Inside `experiments`, you'll find another folder named `pretrained_models`.
 5.  Upload the `.pth` files you downloaded into this `pretrained_models` folder.
 
-The final path should look like this:
+The final path should look like this in your local memory allocated for the colab:
 `/content/PFT-SR/experiments/pretrained_models/PFT_lightweight_SRx4.pth`
 
-#### Step 5: Install Environment (Cells 5-8)
+#### Step 4: Install Environment (‼️ IMPORTANT: Despite the warning to restart the runtime, wait till this whole section to install before restarting the runtime)
 Run these cells in order. They will:
 1.  Install the specific **CUDA Toolkit (12.1)** required by the project.
 2.  Install the matching **PyTorch version (`2.5.0+cu121`)**.
