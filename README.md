@@ -79,6 +79,11 @@ Now you're ready to test!
 ## 🖼️ Example Result
 Here is an example using the `lenna.png` image (from the notebook) with the `lightweight` model at 4x scale.
 
+### Comparing (lenna)
+
+![comparing Image](test/test_lenna.png)
+
+
 ### Input (lenna)
 
 ![Input Image](test/lenna.png)
