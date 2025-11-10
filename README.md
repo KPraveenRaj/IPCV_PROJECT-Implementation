@@ -81,7 +81,7 @@ Here is an example using the `lenna.png` image (from the notebook) with the `lig
 
 ### Comparing (lenna)
 
-![comparing Image](test/test_lenna.png)
+![comparing Image](test_lenna.png)
 
 
 ### Input (lenna)
