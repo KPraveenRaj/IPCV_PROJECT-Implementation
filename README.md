@@ -92,3 +92,14 @@ Here is an example using the `lenna.png` image (from the notebook) with the `lig
 
 
 ![Output Image](test/results/lenna_PFT_lightweight_SRx4.png)
+
+## Citation
+
+```
+@article{long2025progressive,
+  title={Progressive Focused Transformer for Single Image Super-Resolution},
+  author={Long, Wei and Zhou, Xingyu and Zhang, Leheng and Gu, Shuhang},
+  journal={arXiv preprint arXiv:2503.20337},
+  year={2025}
+}
+```
